@@ -161,6 +161,7 @@ public record Person(string FirstName, string LastName);
 
 
 // Delegates LEARNINGS
+/*
 var loggerAction = () => {
   System.Console.WriteLine("This is a simple");
 };
@@ -171,20 +172,30 @@ Func<int,int> loggerFunc = (int x) => {
 
 var list = Enumerable.Range(1, 10).Select(i => i * 3).ToList();
 
-public delegate int SuperCustom(int x);
+// public delegate int SuperCustom(int x);
+
+var callCal = (Action func) => {
+  func();
+};
+*/
 
 
+// Dictionary LEARNINGS
+/*
+using ConsoleApp;
+Solution solution = new();
+int[] res = solution.TwoSum([1,23,4,34,32,2,4,5,14,7], 9);
+Console.WriteLine($"Answer = {res[0]} {res[1]}");
+*/
 
+// HashSet LEARNINGS
+/*
+using ConsoleApp;
 
+SolutionSet ss = new();
 
+bool result = ss.ContainsDuplicate([1,2,3,4,5,6,7,8,9]);
+Console.WriteLine(result);
+*/
 
-
-
-
-
-
-
-
-
-
-
+Console.WriteLine("Hello Fat");
